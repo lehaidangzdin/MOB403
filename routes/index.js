@@ -18,9 +18,8 @@ router.get("/Bai01Lab01", function (req, res) {
 router.post("/Bai02Lab01", function (req, res) {
   let {cd, cr} = req.body;
 
-  console.log(cd,cr)
   let dt = cd * cr;
-  let cv = (cd + cr) * 2;
+  let cv = ((parseInt(cd)+parseInt(cr)) * 2);
   res.send('Dien tich: ' + dt + ' Chu vi: ' + cv);
 })
 router.post("/Bai03Lab01", function (req, res) {
